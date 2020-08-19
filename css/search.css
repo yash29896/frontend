@@ -70,9 +70,13 @@ body{
 
 
 #mdiv{
-	
+	position: sticky;
+	top: 0;
+	background-color: white;
+	z-index: 1;
 	height: 65px;
-	width: 1280px;
+	min-width: 1280px;
+	width: 100%;
 	font-size: 14px;
 	margin-top: 10px;
 
@@ -138,11 +142,17 @@ a:hover{
 
 }
 
+
+
+
+
+
 #ndiv{
 	
 	border-bottom: 1px solid #ebebeb;
 	font-size: 13px;
-	width: 1280px;
+	min-width: 1280px;
+	width: 100%;
 	display: grid;
 	grid-template-columns:180px 690px 1fr;
 
@@ -228,10 +238,10 @@ a:hover{
 }
 
 #maindiv{
-	border:5px solid black;
+	
 	width: 680px;
 	margin-left: 180px;
-	
+	height: auto;
 	padding-left: 15px;
 }
 #snum{
@@ -250,7 +260,7 @@ a:hover{
 }
 .sheading{
 	font-size: 20px;
-	margin: 10px 0;
+	margin: 8px 0;
 	
 }
 
@@ -272,4 +282,131 @@ a:hover{
 .sresult{
 	text-align: left;
 	margin: 10px 0 20px 0	;
+}
+
+
+.ccard{
+	height: 312px;
+	width: 212px;
+	border: 1px solid #dadce0;
+	display: flex;
+	flex-flow: column; 
+	text-align: left;
+	border-radius: 8px;
+
+}
+
+img{
+	width: 100%;
+	height: 140px;
+	border-top-left-radius:  8px;
+	border-top-right-radius: 8px;
+
+}
+h4{
+	font-size: 1.4rem;
+}
+
+.cvideo{
+	width: 100%;
+	height: 140px;
+}
+
+a{
+	color: #1a0dab;
+}
+
+.cfooter{
+	font-size: 0.9rem;
+}
+
+.cfooter p{
+	margin: 0;
+	color: #808080;
+}
+
+.content{
+	padding: 15px;
+	display: flex;
+	width: 100%;
+	flex-grow: 1;
+	flex-flow: column; 
+	justify-content: space-between;
+
+}
+
+.bnone{
+	border:none;
+}
+
+#stab{
+	font-size: 0.78rem;
+	margin-top: 20px;
+	line-height: 1.7;
+}
+
+td{
+	padding-right: 3rem;
+}
+
+.pind{
+	margin: 0;
+	text-align: center;
+	font-size: 14px;
+	margin: 10px auto;
+	
+}
+
+.pind td{
+	padding:2px;
+}
+
+.pind tr:nth-of-type(1){
+	
+	font-family: 'Poppins', sans-serif;
+	font-size:  22px;
+	font-weight: 800;
+
+}
+
+tr a.text-warning:hover{
+	color: #ffc107 !important;
+}
+
+tr a.txt-warning {
+	color: yellow ;
+}
+
+
+
+.pind td:nth-of-type(1){
+	font-size: 44px;
+	margin-top: 10;
+	font-weight: 100;
+	
+
+
+}
+
+footer { 
+	font-size: 14px;
+	min-width: 1280px;
+	
+	width: 100%;
+	color: #000;
+	background-color: rgb(242, 242, 242);
+}
+
+footer a{
+	color:black;
+}
+footer a:hover{
+	color: black;
+	text-decoration: none;
+}
+
+#f-1,#f-2{
+
+	padding: 10px 10px 10px 195px;
+	border:1px solid rgba(0,0,0,0.1);
 }
